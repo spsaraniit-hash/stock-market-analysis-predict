@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Stock Market Analysis</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #222;
+}
+
+header {
+    background: #102a43;
+    color: white;
+    padding: 30px 15px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #d9e2ec;
+}
+
+nav {
+    background: #1677ff;
+    padding: 14px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 8px;
+    font-size: 14px;
+}
+
+.container {
+    width: 92%;
+    max-width: 1100px;
+    margin: 25px auto;
+}
+
+.hero,
+.card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px #ddd;
+}
+
+.hero {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    color: #102a43;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    margin: 30px 0 15px;
+    color: #102a43;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.card {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #1677ff;
+    margin-bottom: 10px;
+}
+
+.company {
+    border-left: 5px solid #1677ff;
+}
+
+.green {
+    color: green;
+    font-weight: bold;
+}
+
+.yellow {
+    color: #d68910;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+th, td {
+    padding: 12px 8px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #102a43;
+    color: white;
+}
+
+footer {
+    margin-top: 40px;
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📈 Stock Market Analysis</h1>
+    <p>Analysis of Major Indian Companies</p>
+  <p>Presented By: S.P. Saran | B.Tech AIDS</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#companies">Companies</a>
+    <a href="#analysis">Analysis</a>
+    <a href="#conclusion">Conclusion</a>
+</nav>
+
+<div class="container">
+
+<section id="home" class="hero">
+    <h2>Indian Stock Market Analysis</h2>
+    <p>
+        This website presents an academic analysis of major
+        Indian companies using fundamental and technical analysis.
+    </p>
+</section>
+
+<h2 id="companies" class="section-title">
+    Major Indian Companies
+</h2>
+
+<div class="cards">
+
+<div class="card company">
+    <h3>TCS</h3>
+    <p>Information Technology</p>
+    <p class="green">Strong</p>
+</div>
+
+<div class="card company">
+    <h3>Infosys</h3>
+    <p>Information Technology</p>
+    <p class="green">Positive</p>
+</div>
+
+<div class="card company">
+    <h3>Reliance Industries</h3>
+    <p>Conglomerate</p>
+    <p class="green">Strong</p>
+</div>
+
+<div class="card company">
+    <h3>HDFC Bank</h3>
+    <p>Banking</p>
+    <p class="green">Stable</p>
+</div>
+
+<div class="card company">
+    <h3>ICICI Bank</h3>
+    <p>Banking</p>
+    <p class="green">Positive</p>
+</div>
+
+<div class="card company">
+    <h3>SBI</h3>
+    <p>Banking</p>
+    <p class="green">Positive</p>
+</div>
+
+<div class="card company">
+    <h3>ITC</h3>
+    <p>FMCG</p>
+    <p class="green">Stable</p>
+</div>
+
+<div class="card company">
+    <h3>Tata Motors</h3>
+    <p>Automobile</p>
+    <p class="green">Positive</p>
+</div>
+
+<div class="card company">
+    <h3>Hindustan Unilever</h3>
+    <p>FMCG</p>
+    <p class="green">Stable</p>
+</div>
+
+<div class="card company">
+    <h3>Larsen & Toubro</h3>
+    <p>Engineering</p>
+    <p class="green">Strong</p>
+</div>
+
+<div class="card company">
+    <h3>Bharti Airtel</h3>
+    <p>Telecommunication</p>
+    <p class="green">Positive</p>
+</div>
+
+<div class="card company">
+    <h3>Asian Paints</h3>
+    <p>Paints</p>
+    <p class="yellow">Moderate</p>
+</div>
+
+</div>
+
+<h2 id="analysis" class="section-title">
+    Company Comparison
+</h2>
+
+<table>
+
+<tr>
+    <th>Company</th>
+    <th>Sector</th>
+    <th>Fundamental View</th>
+    <th>Risk</th>
+</tr>
+
+<tr>
+    <td>TCS</td>
+    <td>IT</td>
+    <td>Strong</td>
+    <td>Medium</td>
+</tr>
+
+<tr>
+    <td>Infosys</td>
+    <td>IT</td>
+    <td>Strong</td>
+    <td>Medium</td>
+</tr>
+
+<tr>
+    <td>Reliance</td>
+    <td>Conglomerate</td>
+    <td>Strong</td>
+    <td>Medium</td>
+</tr>
+
+<tr>
+    <td>HDFC Bank</td>
+    <td>Banking</td>
+    <td>Strong</td>
+    <td>Low-Medium</td>
+</tr>
+
+<tr>
+    <td>ICICI Bank</td>
+    <td>Banking</td>
+    <td>Strong</td>
+    <td>Medium</td>
+</tr>
+
+<tr>
+    <td>SBI</td>
+    <td>Banking</td>
+    <td>Positive</td>
+    <td>Medium</td>
+</tr>
+
+<tr>
+    <td>ITC</td>
+    <td>FMCG</td>
+    <td>Stable</td>
+    <td>Low-Medium</td>
+</tr>
+
+<tr>
+    <td>Tata Motors</td>
+    <td>Automobile</td>
+    <td>Positive</td>
+    <td>Medium-High</td>
+</tr>
+
+</table>
+
+<h2 class="section-title">
+    Fundamental Analysis
+</h2>
+
+<div class="cards">
+
+<div class="card">
+    <h3>Revenue</h3>
+    <p>
+        Revenue growth helps evaluate the company's business
+        performance and growth potential.
+    </p>
+</div>
+
+<div class="card">
+    <h3>Profit</h3>
+    <p>
+        Profitability shows the company's ability to generate
+        earnings from its business operations.
+    </p>
+</div>
+
+<div class="card">
+    <h3>P/E Ratio</h3>
+    <p>
+        Price-to-Earnings ratio helps investors understand
+        the valuation of a company's stock.
+    </p>
+</div>
+
+<div class="card">
+    <h3>Debt</h3>
+    <p>
+        Debt levels help in understanding the financial risk
+        and stability of a company.
+    </p>
+</div>
+
+</div>
+
+<h2 class="section-title">
+    Technical Analysis
+</h2>
+
+<div class="card">
+    <p>
+        Technical analysis studies historical price and trading
+        volume patterns. Common indicators include Moving Average,
+        RSI and MACD.
+    </p>
+</div>
+
+<h2 class="section-title">
+    Risk Factors
+</h2>
+
+<div class="cards">
+
+<div class="card">
+    <h3>Market Risk</h3>
+    <p>Stock prices can change because of overall market conditions.</p>
+</div>
+
+<div class="card">
+    <h3>Economic Risk</h3>
+    <p>Inflation, interest rates and economic changes can affect stocks.</p>
+</div>
+
+<div class="card">
+    <h3>Company Risk</h3>
+    <p>Business performance and management decisions can affect stock value.</p>
+</div>
+
+</div>
+
+<h2 id="conclusion" class="section-title">
+    Conclusion
+</h2>
+
+<div class="hero">
+    <p>
+        Stock market analysis helps investors understand company
+        performance, valuation, risk and market trends. Investors
+        should conduct proper research before making investment
+        decisions. Past performance does not guarantee future returns.
+    </p>
+</div>
+
+</div>
+
+<footer>
+    <p>Stock Market Analysis | College Project</p>
+    <p>Prepared for Academic Purpose</p>
+  <!-- Company Search -->
+
+<h2 class="section-title">
+    🔍 Search Company
+</h2>
+
+<div class="card">
+
+    <input
+        type="text"
+        id="companySearch"
+        placeholder="Enter company name..."
+        onkeyup="searchCompany()"
+        style="width:100%; padding:12px; border:1px solid #ccc; border-radius:8px; font-size:16px;"
+    >
+
+    <div id="searchResult" style="margin-top:15px;"></div>
+
+</div>
+
+<script>
+function searchCompany() {
+
+    let input = document.getElementById("companySearch").value.toLowerCase();
+    let result = document.getElementById("searchResult");
+
+    let companies = {
+        "tcs": "TCS - IT Sector - Recommendation: HOLD",
+        "infosys": "Infosys - IT Sector - Recommendation: HOLD",
+        "reliance": "Reliance Industries - Conglomerate - Recommendation: BUY",
+        "hdfc": "HDFC Bank - Banking Sector - Recommendation: BUY",
+        "icici": "ICICI Bank - Banking Sector - Recommendation: BUY",
+        "sbi": "SBI - Banking Sector - Recommendation: HOLD",
+        "itc": "ITC - FMCG Sector - Recommendation: HOLD",
+        "tata motors": "Tata Motors - Automobile Sector - Recommendation: HOLD"
+    };
+
+    if (input === "") {
+        result.innerHTML = "";
+        return;
+    }
+
+    if (companies[input]) {
+        result.innerHTML =
+            "<p class='green'><b>" + companies[input] + "</b></p>";
+    } else {
+        result.innerHTML =
+            "<p style='color:red;'>Company not found</p>";
+    }
+}
+</script>
+</footer>
+  <!-- Stock Market Recommendation -->
+
+<h2 class="section-title">
+    Stock Market Recommendation
+</h2>
+
+<div class="cards">
+
+<div class="card">
+    <h3>TCS</h3>
+    <p>Sector: IT</p>
+    <p class="green">Recommendation: HOLD</p>
+</div>
+
+<div class="card">
+    <h3>Infosys</h3>
+    <p>Sector: IT</p>
+    <p class="green">Recommendation: HOLD</p>
+</div>
+
+<div class="card">
+    <h3>Reliance Industries</h3>
+    <p>Sector: Conglomerate</p>
+    <p class="green">Recommendation: BUY</p>
+</div>
+
+<div class="card">
+    <h3>HDFC Bank</h3>
+    <p>Sector: Banking</p>
+    <p class="green">Recommendation: BUY</p>
+</div>
+
+<div class="card">
+    <h3>ICICI Bank</h3>
+    <p>Sector: Banking</p>
+    <p class="green">Recommendation: BUY</p>
+</div>
+
+<div class="card">
+    <h3>SBI</h3>
+    <p>Sector: Banking</p>
+    <p class="green">Recommendation: HOLD</p>
+</div>
+
+</div>
+
+<h2 class="section-title">
+    Sample Stock Price Trend
+</h2>
+
+<div class="card">
+    <p><b>TCS</b></p>
+
+    <div style="margin-top:15px; font-size:18px;">
+        ₹3200 → ₹3280 → ₹3350 → ₹3420 → ₹3500
+    </div>
+
+    <p class="green" style="margin-top:10px;">
+        Overall Trend: Positive
+    </p>
+
+    <p style="margin-top:10px;">
+        Note: The above values are sample academic data
+        used for demonstration purposes.
+    </p>
+</div>
+<!-- About Project -->
+
+<h2 class="section-title">
+    📚 About the Project
+</h2>
+
+<div class="card">
+
+    <p>
+        This Stock Market Analysis project is developed as an
+        academic project to study the performance of major Indian
+        companies and understand the basic concepts of stock market
+        analysis.
+    </p>
+
+</div>
+
+
+<!-- Objectives -->
+
+<h2 class="section-title">
+    🎯 Objectives
+</h2>
+
+<div class="cards">
+
+<div class="card">
+    <h3>Objective 1</h3>
+    <p>
+        To understand the basic concepts of the Indian stock market.
+    </p>
+</div>
+
+<div class="card">
+    <h3>Objective 2</h3>
+    <p>
+        To compare the performance of major Indian companies.
+    </p>
+</div>
+
+<div class="card">
+    <h3>Objective 3</h3>
+    <p>
+        To understand fundamental and technical analysis.
+    </p>
+</div>
+
+<div class="card">
+    <h3>Objective 4</h3>
+    <p>
+        To study the risks involved in stock market investment.
+    </p>
+</div>
+
+</div>
+
+
+<!-- Methodology -->
+
+<h2 class="section-title">
+    📝 Methodology
+</h2>
+
+<div class="card">
+
+    <p>
+        The project uses a descriptive approach to study selected
+        Indian companies. Company sectors, fundamental factors,
+        technical indicators, risk factors and sample trends are
+        considered for academic analysis.
+    </p>
+
+    <br>
+
+    <p>
+        The analysis focuses on concepts such as revenue, profit,
+        P/E ratio, debt, moving averages, RSI and MACD.
+    </p>
+
+</div>
+
+
+<!-- References -->
+
+<h2 class="section-title">
+    📖 References
+</h2>
+
+<div class="card">
+
+    <ul style="padding-left:20px; line-height:2;">
+
+        <li>
+            National Stock Exchange (NSE) - Stock Market Information
+        </li>
+
+        <li>
+            Bombay Stock Exchange (BSE) - Market Information
+        </li>
+
+        <li>
+            Company Annual Reports and Investor Information
+        </li>
+
+        <li>
+            Financial newspapers and educational resources
+        </li>
+
+    </ul>
+
+</div>
+</body>
+</html>
